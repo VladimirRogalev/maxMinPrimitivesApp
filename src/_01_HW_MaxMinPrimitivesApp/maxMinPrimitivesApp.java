@@ -3,8 +3,26 @@ package _01_HW_MaxMinPrimitivesApp;
 public class maxMinPrimitivesApp {
 
 	public static void main(String[] args) {
+		if (args.length == 0) {
+			System.out.println("Byte min: " + Byte.MIN_VALUE);
+			System.out.println("Byte max " + Byte.MAX_VALUE);
+			System.out.println("Integer min: " + Integer.MIN_VALUE);
+			System.out.println("Integer max: " + Integer.MAX_VALUE);
+			System.out.println("Short min: " + Short.MIN_VALUE);
+			System.out.println("Short max: " + Short.MAX_VALUE);
+			System.out.println("Long min: " + Long.MIN_VALUE);
+			System.out.println("Long max: " + Long.MAX_VALUE);
+			System.out.println("Char min: " + (int) Character.MIN_VALUE);
+			System.out.println("Char max: " + (int) Character.MAX_VALUE);
+			System.out.println("Float min: " + Float.MIN_VALUE);
+			System.out.println("Float Max: " + Float.MAX_VALUE);
+			System.out.println("Double min: " + Double.MIN_VALUE);
+			System.out.println("Double max: " + Double.MAX_VALUE);
 
-		result(args[0].toLowerCase());
+		} else {
+			result(args[0].toLowerCase());
+
+		}
 
 	}
 
@@ -27,8 +45,8 @@ public class maxMinPrimitivesApp {
 			System.out.println("Long max: " + Long.MAX_VALUE);
 			break;
 		case "char":
-			System.out.println("Char min: " + (int)Character.MIN_VALUE);
-			System.out.println("Char max: " + (int)Character.MAX_VALUE);
+			System.out.println("Char min: " + (int) Character.MIN_VALUE);
+			System.out.println("Char max: " + (int) Character.MAX_VALUE);
 			break;
 		case "float":
 			System.out.println("Float min: " + Float.MIN_VALUE);
